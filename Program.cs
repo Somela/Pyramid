@@ -18,6 +18,15 @@ namespace Pyramid
             Telephone telephone = new Telephone();
             telephone.answer();
             Telephone.HangUp();
+
+            Console.WriteLine("--------------------------------------------");
+            CustomAttribute att = new CustomAttribute();
+            Console.WriteLine("Please Enter String1");
+            string str1 = Console.ReadLine();
+            Console.WriteLine("Please Enter String2");
+            string str2 = Console.ReadLine();
+            att.setDetails(str1, str2);
+            Console.WriteLine("Combine String : " + att.CombineString());
             Console.ReadKey();
         }
     }
